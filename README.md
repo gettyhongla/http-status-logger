@@ -1,7 +1,16 @@
-# HTTP Status Logger (Bash Learning Project)
+# HTTP Status Logger (Bash Scripting Learning Project)
 
 This script logs random HTTP status codes and their descriptions at fixed intervals, stores them in a `.txt` file, and exports the logs to a clean `.csv` file — all using pure Bash. It's designed as a hands-on Bash scripting project to help you practice and retain core scripting concepts like background processes, `IFS`, `awk`, `jq`, `sed`, signal handling, and more.
 
+---
+
+# 🖥️ OS Compatibility
+
+| OS                 | Status   | Notes                                                                 |
+| ------------------ | -------- | --------------------------------------------------------------------- |
+| Ubuntu 25.x        | ✅ Tested | Fully supported with default Bash (4.x+) and `jq` preinstalled        |
+| macOS Sequoia 15.3 | ✅ Tested | Works with system Bash (3.2), but uses portable syntax (no `mapfile`) |
+ 
 ---
 
 ## 🎯 Purpose
