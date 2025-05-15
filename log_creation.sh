@@ -6,7 +6,7 @@ csv_file="http_code_status.csv"
 max_duration=500 #seconds
 interval=5        # seconds between logs
 
-# Download JSON and load into Bash array
+# Download JSON response and set it as a variable then if statement will check if $json is empty and if so it prints error mssg
 json=$(curl -s https://raw.githubusercontent.com/for-GET/know-your-http-well/master/json/status-codes.json)
 if [[ -z "$json" ]]; then
     echo "❌ Failed to fetch status codes JSON. Check your internet connection."
